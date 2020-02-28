@@ -1,25 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 body {
     background-color: #1B2838;
+    margin: 0;
+    font-family: 'Ubuntu';
 }
-header {
+.pageHeader {
     background: #171A21;
+    padding: 1.5rem 0;
 }
-.headerMenu {
-    padding: 0;
+a {
+    color: #C6D4DF;
+    text-decoration: none;
 }
-.headerMenu li {
-    display: inline;
-    margin-right: 25px;
+.logoContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
 }
-
 .logo {
     width: 176px;
     height: 44px;
-
+}
+.headerMenu li {
+    display: inline;
+    margin-left: 20px;
 }
 .steamMenu {
     background-color: #387198;
+    padding: 0.7rem 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 70%;
+    margin: 2rem auto;    
 }
-.steamMenu li {
-    display: inline;
-}
+    .steamMenu li {
+        display: inline;
+        margin-left: 30px;
+    }
