@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: 'Ubuntu';
 }
+/* estilo header */
 .pageHeader {
     background: #171A21;
     padding: 1.5rem 0;
@@ -25,7 +26,7 @@ a {
 }
 .headerMenu li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 1.2rem;
 }
 .steamMenu {
     background-color: #387198;
@@ -38,13 +39,49 @@ a {
 }
     .steamMenu li {
         display: inline;
-        margin-left: 30px;
+        margin-left: 2rem;
     }
+/* estilo footer */
 .pageFooter {
     background: #111a24;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
 }
     .footerImages {
         width: 83px;
         height: 25px;
-
     }
+    .pageFooter p {
+        color: #8F98A0;
+        width: 65%;
+    }
+    .footerMenu li {
+    display: inline;
+    margin-left: 1.3rem;
+    }
+    hr {
+        width: 70%;
+        border-color: #29363d;
+        margin-bottom: 0.4rem;
+    }
+    .footerContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+/* estilo panel de novedades */
+.newsPanel {
+    display: inline-block;
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 0%;
+    background-color:white;
+}
+
+
+/*aside*/
+aside {
+    display: inline-flex;
+}
