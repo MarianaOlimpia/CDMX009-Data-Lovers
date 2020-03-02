@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #1B2838;
     margin: 0;
     font-family: 'Ubuntu';
 }
-/* estilo header */
+
+a {
+    text-decoration: none;
+    color: #C6D4DF;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
 .pageHeader {
     background: #171A21;
     padding: 1.5rem 0;
-}
-a {
-    color: #C6D4DF;
-    text-decoration: none;
 }
 .logoContainer {
     display: flex;
@@ -41,7 +55,8 @@ a {
         display: inline;
         margin-left: 2rem;
     }
-/* estilo footer */
+
+/* Footer */
 .pageFooter {
     background: #111a24;
     padding: 0.5rem 0;
@@ -71,7 +86,8 @@ a {
         width: 70%;
         margin: 0 auto;
     }
-/* estilo panel de novedades */
+
+/* Panel de Novedades */
 .newsPanel {
     display: inline-block;
     width: 60%;
@@ -81,7 +97,30 @@ a {
 }
 
 
-/*aside*/
+/*Aside*/
 aside {
     display: inline-flex;
 }
+.btn-menu {
+    display: none;
+    width: 25px;
+}
+.btn-menu .icono {
+    float: right;
+}
+
+.contenedor-menu {
+    width: 20%;
+    min-width: 300px;
+    display: inline-block;
+}
+
+.contenedor-menu .menu {
+    width: 100%;
+}
+
+.contenedor-menu .menu li a{
+    display: block;
+    padding: 15px 20px;
+}
+
