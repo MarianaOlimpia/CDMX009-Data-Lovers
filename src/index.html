@@ -37,16 +37,74 @@
       </nav>
     </div>
 
+  <!--Aside-->
+  <aside>
+    <div class="contenedor-menu">
+      <img src="img/iconos/menu.svg" class="btn-menu icono" alt="Ícono categorias">
+      <a href="#" >Menú</a><!--Botón menú para dispositivos móviles-->
+      <ul class="menu">
+        <li>
+          <input type="text" placeholder="Buscar por palabra">
+          <a href="#">
+            <img src="img/iconos/buscar.svg" class="icon right" width="25px" alt="Ícono de búsqueda">
+          </a>
+        </li>
+        <li>
+          <img src="img/iconos/categorias.svg" width="15px" alt="Ícono categorias">
+          <a href="#">Categorías</a>
+          <img src="img/iconos/flecha-hacia-abajo.svg" width="15px" alt="Ícono categorias">
+          <ul>
+            <li><a href="#">Todas las noticias</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Client Updates</a></li>
+            <li><a href="#">Product Updates</a></li>
+            <li><a href="#">Press Releases</a></li>
+            <li><a href="#">Product Releases</a></li>
+            <li><a href="#">Steam Blog</a></li>
+            <li>NOTICIAS RELACIONADAS</li>
+            <li><a href="#">Noticia 1</a></li>
+            <li><a href="#">Noticia 2</a></li>
+            <li><a href="#">Noticia 3</a></li>
+            
+          </ul>
+        </li>
+        <li><a href="#">Últimas Noticias</a></li>
+          <ul>
+            <li><a href="#">Noticia 1</a></li>
+            <li><a href="#">Noticia 2</a></li>
+            <li><a href="#">Noticia 3</a></li>
+          </ul>
+        <li><a href="#">Lo Más Leído</a></li>
+          <ul>
+            <li><a href="#">Noticia 1</a></li>
+            <li><a href="#">Noticia 2</a></li>
+            <li><a href="#">Noticia 3</a></li>
+          </ul>
+      </ul>
+    </div>
+  </aside>
+
+    <!--Panel de Novedades-->
     <section class="newsPanel">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lobortis pulvinar mi, sagittis tempor ante congue eget. Quisque at ipsum vel turpis euismod lobortis vel sed diam. Duis augue libero, rutrum a metus et, eleifend consequat elit. Vivamus malesuada leo sed imperdiet imperdiet. Maecenas laoreet mattis nulla quis rhoncus. Mauris tempus quam magna, ut auctor dui ullamcorper ac. Curabitur nisi felis, hendrerit ac tristique non, bibendum vitae lacus. Suspendisse pretium ullamcorper mauris, ut luctus purus sollicitudin vitae. Curabitur iaculis ligula rutrum, hendrerit mi aliquam, placerat risus. Nullam blandit mauris lectus, a suscipit quam aliquet vitae. Praesent at scelerisque metus. Integer quis augue eu elit lacinia lobortis. Pellentesque pharetra eget turpis rhoncus volutpat</p>
       <p>Cras euismod leo eu nibh faucibus faucibus. Morbi malesuada dignissim tortor, nec vulputate libero commodo vel. Donec dictum velit neque, sit amet porta mauris semper in. Fusce bibendum dui non magna dapibus, id aliquam nisl malesuada. Cras vel fringilla nisl. Sed nec tortor in nulla efficitur sagittis et a nisi. Sed sed blandit dui. Aliquam mattis, mi in interdum condimentum, diam eros rhoncus magna, et venenatis lectus metus vitae urna.</p>
       <p>Nullam et tempus odio, vitae egestas orci. Phasellus sed suscipit nibh. Quisque laoreet, justo ut porttitor dignissim, tellus sapien tincidunt libero, ut sagittis neque nulla at libero. Fusce feugiat tempor massa, et finibus mauris mollis placerat. Mauris hendrerit dictum risus, a venenatis libero vehicula a. Etiam rutrum tristique ipsum, id luctus mauris tempus sit amet. Cras mattis turpis in felis tempus, vel consequat nisl maximus. Curabitur ut nibh sed erat sodales varius. Aenean ex mauris, feugiat nec elit at, pretium feugiat nunc. Donec scelerisque facilisis tortor, id aliquet turpis posuere quis. Integer accumsan suscipit facilisis. Vestibulum dui leo, pulvinar ac egestas id, tempor vitae felis. Praesent sit amet massa ac libero pulvinar consectetur. Donec fringilla volutpat magna. Pellentesque maximus nibh sem, eget posuere lacus sollicitudin nec.</p>
+    </section><!--Panel de Novedades-->
+
+    <!--Lista de Noticias-->
+    <section class="news list" id="news list">
+      <div class="new" id="new">
+        <h3>Categoría</h3>
+        <img src="img/miniatura_noticia.jpeg">
+        <h3 class="min-title">Fusce feugiat tempor massa, et finibus mauris mollis placerat.</h3>
+        <p class="date">Fecha: sábado, 22 de febrero de 2020 3:35</p>
+      </div>
     </section>
 
-    <!--seccion noticias -->
-    <section class="news" id="news">
-      <h3>categorias</h3>
-      <h1>Titulo de la Noticia</h1>
+    <!-- Mostrar noticia -->
+    <article class="news" id="news">
+      <h3>Categoría</h3>
+      <h1>Título de la Noticia</h1>
       <img src="img/iconosNoticia/img1.jpg" alt="imagen de la noticia">
       <div class="publicacionYActualizacion">
         <p>Publicada: sábado, 22 de febrero de 2020 3:35</p>
@@ -54,73 +112,25 @@
       </div>
       <div class="botonesOpciones">
         <ul>
-          <li><img src="img/iconosNoticia/imprimir.svg" alt="imprimir" class="Buttons"></li>
-          <li><img src="img/iconosNoticia/enviar.svg" alt="enviar" class="Buttons"></li>
-          <li><img src="img/iconosNoticia/facebook.svg" alt="facebook"></li>
-          <li><img src="img/iconosNoticia/twitter.svg" alt="Twitter"></li>
+          <li><img src="img/iconos/imprimir.svg" alt="imprimir" class="Buttons"></li>
+          <li><img src="img/iconos/enviar.svg" alt="enviar" class="Buttons"></li>
+          <li><img src="img/iconos/facebook.svg" alt="facebook"></li>
+          <li><img src="img/iconos/twitter.svg" alt="Twitter"></li>
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet dignissim est, ut tincidunt augue vestibulum ut. Vestibulum purus augue, volutpat hendrerit ipsum vel, ullamcorper sollicitudin ipsum. Vivamus vehicula arcu quis lacus porta tempor. Ut blandit ipsum fringilla mi semper, in iaculis libero sollicitudin. Mauris velit dolor, fermentum nec massa feugiat, ultrices aliquet urna. Ut in pharetra diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus interdum urna sit amet finibus tempor. Phasellus et euismod leo. Praesent vel ligula elit. Proin mattis cursus ligula, in suscipit est vulputate sed. Nunc condimentum sagittis consectetur. Cras sit amet libero dolor. Donec malesuada lectus id luctus aliquet. Mauris fermentum turpis sed ipsum tristique, vel convallis nisl volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 
-In hac habitasse platea dictumst. Vivamus ac augue consequat, dapibus arcu et, hendrerit leo. Nulla elit tellus, elementum sed pharetra sed, euismod vitae urna. Donec porttitor tortor sit amet nunc porttitor, sed egestas nisl cursus. In id enim vel magna vestibulum accumsan. Integer eget hendrerit orci, in sollicitudin nibh. Ut ut viverra erat. Nullam ut posuere ante. Vestibulum aliquet venenatis urna, a eleifend ipsum posuere in.
+        In hac habitasse platea dictumst. Vivamus ac augue consequat, dapibus arcu et, hendrerit leo. Nulla elit tellus, elementum sed pharetra sed, euismod vitae urna. Donec porttitor tortor sit amet nunc porttitor, sed egestas nisl cursus. In id enim vel magna vestibulum accumsan. Integer eget hendrerit orci, in sollicitudin nibh. Ut ut viverra erat. Nullam ut posuere ante. Vestibulum aliquet venenatis urna, a eleifend ipsum posuere in.
 
-Vestibulum eget elit sed diam hendrerit auctor ut non ipsum. Sed malesuada, est eget varius faucibus, nisi neque posuere quam, vel suscipit nibh turpis quis tortor. Integer dapibus, augue a pretium lacinia, sapien lectus fringilla ante, sed rutrum ligula erat sed urna. Sed volutpat eleifend tempus. Morbi bibendum mattis finibus. Phasellus laoreet a libero vel aliquam. Nunc tempor mi sit amet lectus convallis, eget venenatis dui condimentum. Donec bibendum magna et mauris malesuada, quis consequat sapien maximus. Vivamus lorem purus, euismod tempus feugiat a, suscipit venenatis nunc. Aliquam maximus augue non neque vulputate, ac mattis lectus ornare. Duis vel vehicula erat, fermentum rhoncus ex. Etiam at mauris in turpis pharetra varius vitae sit amet lacus. Sed quis sodales ex, ac feugiat risus. Praesent fermentum est nisi, at placerat odio varius nec.
+        Vestibulum eget elit sed diam hendrerit auctor ut non ipsum. Sed malesuada, est eget varius faucibus, nisi neque posuere quam, vel suscipit nibh turpis quis tortor. Integer dapibus, augue a pretium lacinia, sapien lectus fringilla ante, sed rutrum ligula erat sed urna. Sed volutpat eleifend tempus. Morbi bibendum mattis finibus. Phasellus laoreet a libero vel aliquam. Nunc tempor mi sit amet lectus convallis, eget venenatis dui condimentum. Donec bibendum magna et mauris malesuada, quis consequat sapien maximus. Vivamus lorem purus, euismod tempus feugiat a, suscipit venenatis nunc. Aliquam maximus augue non neque vulputate, ac mattis lectus ornare. Duis vel vehicula erat, fermentum rhoncus ex. Etiam at mauris in turpis pharetra varius vitae sit amet lacus. Sed quis sodales ex, ac feugiat risus. Praesent fermentum est nisi, at placerat odio varius nec.
 
-Mauris ultricies vel lectus at vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat erat at velit ornare, ultrices tincidunt justo scelerisque. Proin elementum accumsan lorem a pulvinar. Fusce venenatis euismod magna malesuada pretium. Etiam pulvinar orci felis, mattis lobortis sapien venenatis quis. Nunc non justo et nulla consequat faucibus nec ac orci. Aenean aliquam velit ut ex interdum sagittis. Nunc interdum est in lorem gravida, sit amet fringilla arcu ultricies. Nunc vestibulum tortor a nunc pellentesque luctus.
+        Mauris ultricies vel lectus at vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat erat at velit ornare, ultrices tincidunt justo scelerisque. Proin elementum accumsan lorem a pulvinar. Fusce venenatis euismod magna malesuada pretium. Etiam pulvinar orci felis, mattis lobortis sapien venenatis quis. Nunc non justo et nulla consequat faucibus nec ac orci. Aenean aliquam velit ut ex interdum sagittis. Nunc interdum est in lorem gravida, sit amet fringilla arcu ultricies. Nunc vestibulum tortor a nunc pellentesque luctus.
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ornare nec enim vitae rhoncus. Sed aliquam urna ac erat vulputate, sit amet pretium diam egestas. Nam blandit sollicitudin gravida. Fusce sagittis elementum est nec hendrerit. Nullam sem odio, finibus eu malesuada nec, lobortis in felis. Proin bibendum in sapien at lacinia. Donec scelerisque leo id dolor ultrices, vel interdum sapien finibus. Donec maximus egestas nunc sit amet scelerisque.</p>
-
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ornare nec enim vitae rhoncus. Sed aliquam urna ac erat vulputate, sit amet pretium diam egestas. Nam blandit sollicitudin gravida. Fusce sagittis elementum est nec hendrerit. Nullam sem odio, finibus eu malesuada nec, lobortis in felis. Proin bibendum in sapien at lacinia. Donec scelerisque leo id dolor ultrices, vel interdum sapien finibus. Donec maximus egestas nunc sit amet scelerisque.
+        </p>
       </div>
+    </article><!-- Mostrar noticia -->
 
-    </section>
-
-    <!--Aside-->
-    <aside>
-      <div class="contenedor-menu">
-        <img src="img/iconos/menu.svg" class="btn-menu icono" alt="Ícono categorias">
-        <a href="#" >Menú</a><!--Botón menú para dispositivos móviles-->
-        <ul class="menu">
-          <li>
-            <input type="text" placeholder="Buscar por palabra">
-            <a href="#">
-              <img src="img/iconos/buscar.svg" class="icon right" width="25px" alt="Ícono de búsqueda">
-            </a>
-          </li>
-          <li>
-            <img src="img/iconos/categorias.svg" width="15px" alt="Ícono categorias">
-            <a href="#">Categorías</a>
-            <img src="img/iconos/flecha-hacia-abajo.svg" width="15px" alt="Ícono categorias">
-            <ul>
-              <li><a href="#">Todas las noticias</a></li>
-              <li><a href="#">Announcements</a></li>
-              <li><a href="#">Client Updates</a></li>
-              <li><a href="#">Product Updates</a></li>
-              <li><a href="#">Press Releases</a></li>
-              <li><a href="#">Product Releases</a></li>
-              <li><a href="#">Steam Blog</a></li>
-              <li>NOTICIAS RELACIONADAS</li>
-              <li><a href="#">Noticia 1</a></li>
-              <li><a href="#">Noticia 2</a></li>
-              <li><a href="#">Noticia 3</a></li>
-              
-            </ul>
-          </li>
-          <li><a href="#">Últimas Noticias</a></li>
-            <ul>
-              <li><a href="#">Noticia 1</a></li>
-              <li><a href="#">Noticia 2</a></li>
-              <li><a href="#">Noticia 3</a></li>
-            </ul>
-          <li><a href="#">Lo Más Leído</a></li>
-            <ul>
-              <li><a href="#">Noticia 1</a></li>
-              <li><a href="#">Noticia 2</a></li>
-              <li><a href="#">Noticia 3</a></li>
-            </ul>
-        </ul>
-
-      </div>
-    </aside>
-
+   
     <footer class="pageFooter">
       <hr>
       <div class="footerContainer">
