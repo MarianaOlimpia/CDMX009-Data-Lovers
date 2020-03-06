@@ -1,4 +1,4 @@
-import { example } from './data.js';
-
-console.log(example);
+import { filterData } from './data.js';
+    
+console.log(filterData);
 

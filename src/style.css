@@ -90,11 +90,20 @@ ul {
 /* Panel de Novedades */
 .newsPanel {
     display: inline-block;
-    width: 60%;
+    width: 65%;
     margin-left: 5%;
     margin-right: 0%;
-    background-color:white;
 }
+    #noticiaPrincipal {
+        border-style: dashed;
+        height: 20rem;
+    }
+    .cuatroNovedades {
+        border-style: dashed;
+        display: inline-block;
+        width: 24.65%;
+        height: 8rem;
+    }
 
 
 /*Aside*/
