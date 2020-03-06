@@ -1,4 +1,4 @@
-import {example} from './data.js';
+import {filtTitle} from './data.js';
     
-console.log(example);
+console.log(filtTitle);
 
