@@ -1,3 +1,4 @@
+//Aquí le estamos pidiendo que importe la función o array 'data' de './data/steam/steam.js'.
 import data from './data/steam/steam.js';
 
 // export const example = () => {
@@ -5,13 +6,14 @@ import data from './data/steam/steam.js';
 
 // }
 // console.log(data);
-//funcion que hace array para traer todos los elementos con titulo
+
+//Función que hace array para traer todos los elementos con título.
 export const filtTitle = data.appnews.newsitems.filter (titulo => {
 return titulo.title
 }) 
  console.log(filtTitle);
 
- //ciclo que trae todos los titulos de los elementos de la funcion filtTitle
+ //Ciclo que trae todos los títulos de los elementos de la función filtTitle.
  for (let i = 0; i<filtTitle.length; i++) {
    let tituloNoticia = filtTitle[i].title;
    console.log(tituloNoticia);
