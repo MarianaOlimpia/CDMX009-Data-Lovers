@@ -18,3 +18,10 @@ return titulo.title
    let tituloNoticia = filtTitle[i].title;
    console.log(tituloNoticia);
  }
+
+
+
+// fetch('https://raw.githubusercontent.com/MarianaOlimpia/CDMX009-Data-Lovers/master/src/data/steam/steam.json')
+//.then(data => data.json)
+//.then(datos => {
+//  console.log(datos)})
