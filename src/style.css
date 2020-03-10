@@ -108,7 +108,8 @@ ul {
 
 /*Aside*/
 aside {
-    display: inline-flex;
+    display: block;
+    float: right;
 }
 .btn-menu {
     display: none;
