@@ -8,36 +8,30 @@ import data from './data/steam/steam.js';
 // }
 // console.log(data);
 
-//Obtiene el botón.
-const btnSearch = document.querySelector('#iconSearch');
 
-//Obtiene la palabra que se ingresa en el input de búsqueda por palabra. let getWord es la función que se encarga de ello y donde se va a almacenar la palabra como valor. letwordSearch es la variable que obtiene el input.
-export let getWord = () => {
-    let wordSearch = document.querySelector('#wordSearch');
-    console.log(wordSearch.value);
+// // Función para filtrar por título
+//Función que hace el array para traer todos los elementos con título.
+
+export function filterByTitle(title){
+  return data.appnews.newsitems.filter(titulo =>titulo.title===title) // no debe ser exactamente igual (regex)
 }
 
-//Se agrega un evento, en este caso 'click' a la variable que trae el botón de búsqueda. Se agrega 'getWord' después de la coma para indicarle que esa será la función que realizará una vez escuche el click.
-btnSearch.addEventListener('click', getWord);
-
-// //Función que hace el array para traer todos los elementos con título.
-export const filtTitle = data.appnews.newsitems.filter (titulo => {
-return titulo.title
-}) 
+ 
 
 //Ciclo que trae todas las noticias por título.
- for (let i = 0; i<filtTitle.length; i++) {
-   let tituloNoticia = filtTitle[i].title;
-   console.log(tituloNoticia);
+ for (let i = 0; i<filterTitle.length; i++) {
+   let newsTitle = filterTitle[i].title;
+   console.log(newsTitle);
  }
 
-console.log(filtTitle);
+console.log(filterByTitle);
 
-var filtWord = filtTitle.filter (newsTitle => {
-  return newsTitle.title.includes('All') 
-})
+// //Intento de filtrar por palabra siguiendo video de .filter
+// var filtWord = filtTitle.filter (newTitle => {
+//   return newTitle.title.includes('All') 
+// })
 
-console.log(filtWord);
+// console.log(filtWord);
 
 // //Función para filtrar por palabra.
 //  export const filtWord = filtTitle.filter (wordSearchTitle => {
@@ -46,8 +40,10 @@ console.log(filtWord);
 
 // //Ciclo que trae todas las noticias por palabra.
 //   for (let i = 0; i<filtWord.length; i++) {
-//     let tituloNoticia = filtWord[i].title;
-//     console.log(tituloNoticia);
+//     let newsTitle = filtWord[i].title;
+//     console.log(newsTitle);
 //   }
 // console.log(filtWord);
+
+// //
 
