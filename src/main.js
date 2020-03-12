@@ -1,15 +1,32 @@
+//Importamos la función filterBYTitle (que filtra por título) del archivo data.js al main.js
 import {filterByTitle} from './data.js'
 
+// // Nodos
+
+// 'let input' trae el input del DOM en el cual tiene el id #wordSearch.
 let input = document.querySelector('#wordSearch')
+
+// 'let a' trae el enlace que corresponde al botón de buscar en el DOM. En el cual tiene el id #elClick.
 let a = document.querySelector('#elClick')
 
-a.addEventListener('click',()=>{
+// 'let prinTitleSearch' es para crear la lista de noticias resultado de la búsqueda por título.
+let printTitleSearch = document.createElement ('li');
+
+
+// //Funciones
+
+//Obtiene la búsqueda del input y retorna el array con los resultados.
+const getInputSearch = () => {
     let value = input.value
     let lista = filterByTitle(value)
     // recorrer la lista y colocar los nodos 
 
     console.log(lista);
-})
+}
+
+// // Eventos
+//Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
+a.addEventListener('click', getInputSearch)
     
 // console.log(filtTitle);
 

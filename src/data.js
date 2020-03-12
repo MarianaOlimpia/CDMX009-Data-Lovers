@@ -1,17 +1,9 @@
 //Aquí le estamos pidiendo que importe la función o array 'data' de './data/steam/steam.js'.
 import data from './data/steam/steam.js';
-// import {getWord} from './main.js'
 
-// export const example = () => {
-//     return 'example';
+// // Funciones
 
-// }
-// console.log(data);
-
-
-// // Función para filtrar por título
-//Función que hace el array para traer todos los elementos con título.
-
+//Función para filtrar por título
 export function filterByTitle(title){
   return data.appnews.newsitems.filter(titulo =>titulo.title.includes(title)) // no debe ser exactamente igual (regex)
 }
