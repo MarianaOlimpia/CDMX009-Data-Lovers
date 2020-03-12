@@ -13,18 +13,18 @@ import data from './data/steam/steam.js';
 //Función que hace el array para traer todos los elementos con título.
 
 export function filterByTitle(title){
-  return data.appnews.newsitems.filter(titulo =>titulo.title===title) // no debe ser exactamente igual (regex)
+  return data.appnews.newsitems.filter(titulo =>titulo.title.includes(title)) // no debe ser exactamente igual (regex)
 }
 
  
 
 //Ciclo que trae todas las noticias por título.
- for (let i = 0; i<filterTitle.length; i++) {
+/* for (let i = 0; i<filterTitle.length; i++) {
    let newsTitle = filterTitle[i].title;
    console.log(newsTitle);
  }
 
-console.log(filterByTitle);
+console.log(filterByTitle);*/
 
 // //Intento de filtrar por palabra siguiendo video de .filter
 // var filtWord = filtTitle.filter (newTitle => {
