@@ -5,6 +5,7 @@ export default {
     {
     "gid":"3316234163932872071",
     "title":"Operation Canteen Crasher!",
+    "img": "https://steamcdn-a.akamaihd.net/steam/news/46099/canteen_crasher_event.jpg?t=1496190709.jpg",
     "url":"https://steamstore-a.akamaihd.net/news/externalpost/tf2_blog/3316234163932872071",
     "is_external_url":true,
     "author":"",

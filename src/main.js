@@ -1,8 +1,13 @@
 //Importamos la función filterBYTitle (que filtra por título) del archivo data.js al main.js
 import {filterByTitle} from './data.js'
+import data from './data/steam/steam.js';
 
 // // Nodos
-
+let noticiaPrincipal = document.querySelector('#noticiaPrincipal').innerHTML = `
+    <div id="noticiaPrincipal">${data.appnews.newsitems[0].title}
+    <img src="${data.appnews.newsitems[0].img}">
+    <p>${data.appnews.newsitems[0].contents}</p>
+    </div>`
 // 'let input' trae el input del DOM en el cual tiene el id #wordSearch.
 let input = document.querySelector('#wordSearch')
 
