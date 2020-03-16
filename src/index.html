@@ -39,21 +39,24 @@
 
   <!--Aside-->
   <aside>
-    <div class="contenedor-menu">
+    <div class="contenedor-aside">
       <img src="img/iconos/menu.svg" class="btn-menu icono" alt="Ícono categorias">
       <a href="#" >Menú</a><!--Botón menú para dispositivos móviles-->
-      <ul class="menu">
-        <li>
+
+      <ul class="menu"><!--Menú general de aside-->
+        <li><!-- Buscador por palabra-->
           <input type="text" id="wordSearch" placeholder="Buscar por palabra">
           <a id="elClick" href="#">
-            <img src="img/iconos/buscar.svg" id="iconSearch" class="icon right" width="25px" alt="Ícono de búsqueda">
+            <img src="img/iconos/buscar.svg" id="iconSearch"
+            width="18px" alt="Ícono de búsqueda">
           </a>
         </li>
-        <li>
+
+        <li class="submenu-categ"><!-- Categorías -->
           <img src="img/iconos/categorias.svg" width="15px" alt="Ícono categorias">
           <a href="#">Categorías</a>
           <img src="img/iconos/flecha-hacia-abajo.svg" width="15px" alt="Ícono categorias">
-          <ul>
+          <ul><!--Submenú de categorías-->
             <li><a href="#" id="all">Todas las noticias</a></li>
             <li><a href="#" id="blog">Steam Blog</a></li>
             <li><a href="#" id="pcGamer">PC Gamer</a></li>

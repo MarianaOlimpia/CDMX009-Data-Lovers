@@ -8,6 +8,7 @@ let noticiaPrincipal = document.querySelector('#noticiaPrincipal').innerHTML = `
     <img src="${data.appnews.newsitems[0].img}">
     <p>${data.appnews.newsitems[0].contents}</p>
     </div>`
+    
 // 'let input' trae el input del DOM en el cual tiene el id #wordSearch.
 let input = document.querySelector('#wordSearch')
 

@@ -56,36 +56,51 @@ ul {
         margin-left: 2rem;
     }
 
-/* Footer */
-.pageFooter {
-    background: #111a24;
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
+/*Aside*/
+aside {
+    display: block;
+    width: 20%;
+    min-width: 300px;
+    width: 100%;
 }
-    .footerImages {
-        width: 83px;
-        height: 25px;
-    }
-    .pageFooter p {
-        color: #8F98A0;
-        width: 65%;
-    }
-    .footerMenu li {
-    display: inline;
-    margin-left: 1.3rem;
-    }
-    hr {
-        width: 70%;
-        border-color: #29363d;
-        margin-bottom: 0.4rem;
-    }
-    .footerContainer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 70%;
-        margin: 0 auto;
-    }
+.contenedor-aside {
+    float: right;
+    background-color: black;
+    margin: 0 2em;
+}
+.menu li a {
+    display: block;
+    width: 100%;
+    padding: 6px 20px;
+}
+.submenu-categ a {
+    float: left;
+}
+.submenu-categ a:hover {
+    background-color: #757575;
+}
+.submenu-categ ul li {
+    display: none;
+    /*position: absolute;*/
+    min-width: 300px;
+}
+.submenu-categ ul:hover > li {
+    display: block;
+}
+.btn-menu {
+    display: none;
+    width: 25px;
+}
+.btn-menu .icono {
+    float: right;
+}*/
+
+
+/*.contenedor-menu {
+    width: 20%;
+    min-width: 300px;
+    display: inline-block;
+}*/
 
 /* Panel de Novedades */
 .newsPanel {
@@ -104,35 +119,6 @@ ul {
         width: 24.65%;
         height: 8rem;
     }
-
-
-/*Aside*/
-aside {
-    display: block;
-    float: right;
-}
-.btn-menu {
-    display: none;
-    width: 25px;
-}
-.btn-menu .icono {
-    float: right;
-}
-
-.contenedor-menu {
-    width: 20%;
-    min-width: 300px;
-    display: inline-block;
-}
-
-.contenedor-menu .menu {
-    width: 100%;
-}
-
-.contenedor-menu .menu li a{
-    display: block;
-    padding: 15px 20px;
-}
 
 /*Página de Noticias */
 .news {
@@ -153,3 +139,35 @@ aside {
       height: 5%;
       display: inline-flex;
     }
+
+/* Footer */
+.pageFooter {
+    background: #111a24;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+.footerImages {
+    width: 83px;
+    height: 25px;
+}
+.pageFooter p {
+    color: #8F98A0;
+    width: 65%;
+}
+.footerMenu li {
+display: inline;
+margin-left: 1.3rem;
+}
+hr {
+    width: 70%;
+    border-color: #29363d;
+    margin-bottom: 0.4rem;
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
