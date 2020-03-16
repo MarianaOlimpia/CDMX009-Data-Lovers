@@ -56,66 +56,41 @@ ul {
         margin-left: 2rem;
     }
 
-/*Aside*/
-aside {
-    display: block;
-    width: 20%;
-    min-width: 300px;
-    width: 100%;
-}
-.contenedor-aside {
+/* Aside */
+.nav-aside {
+    width: 250px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    background:#2a475e;
     float: right;
-    background-color: black;
-    margin: 0 2em;
 }
-.menu > li {
-    position: relative;
-    /*display: inline-block;*/
+.nav-aside > li {
+   position: relative;
 }
-.menu > li > a {
+.nav-menu > li > a {
     display: block;
-    padding: 15px 20px;
+    padding: 5px 0px;
+    color: #4F94BC;
 }
-.menu li a {
-    display: block;
-    width: 100%;
-    padding: 6px 20px;
+.nav-menu li a:hover {
+    background-color: darkgray;
 }
-.menu li a:hover {
-    background-color: rgb(148, 164, 165);
-    transition: all .3s;
-}
-
-/* Submenú de Categorías */
-.submenu-categ {
+/* Submenú */
+.nav-submenu {
     position: absolute;
-    background: coral;
+    background: darkorange;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
 }
-.submenu-categ li a {
+.nav-submenu li a {
     display: block;
-    padding: 15px;
+    padding: 5px;
 }
-.menu li:hover .submenu-categ {
-    display: block;
+.nav-menu li:hover .nav-submenu {
+    visibility: visible;
+    opacity: 1;
 }
-.submenu-categ a {
-    float: left;
-}
-
-.btn-menu {
-    display: none;
-    width: 25px;
-}
-.btn-menu .icono {
-    float: right;
-}*/
-
-
-/*.contenedor-menu {
-    width: 20%;
-    min-width: 300px;
-    display: inline-block;
-}*/
 
 /* Panel de Novedades */
 .newsPanel {
@@ -185,41 +160,4 @@ hr {
     align-items: center;
     width: 70%;
     margin: 0 auto;
-}
-
-
-/* Prueba menú desplegable */
-.nav-aside {
-    width: 170px;
-    margin: 10px 10px 10px 10px;
-    padding: 10px;
-    background: brown;
-    float: right;
-}
-.nav-aside > li {
-   position: relative;
-}
-.nav-menu > li > a {
-    display: block;
-    padding: 15px 20px;
-    color: chartreuse;
-}
-.nav-menu li a:hover {
-    background-color: darkgray;
-}
-/* Submenú */
-.nav-submenu {
-    position: absolute;
-    background: darkorange;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1.5s;
-}
-.nav-submenu li a {
-    display: block;
-    padding: 5px;
-}
-.nav-menu li:hover .nav-submenu {
-    visibility: visible;
-    opacity: 1;
 }
