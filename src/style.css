@@ -94,21 +94,29 @@ ul {
 
 /* Panel de Novedades */
 .newsPanel {
-    display: inline-block;
     width: 65%;
     margin-left: 5%;
     margin-right: 0%;
 }
-    #noticiaPrincipal {
+#noticiaPrincipal {
+    position: relative;
+}
+    .principal {
         border-style: dashed;
         height: 20rem;
+        width: 100%;
+        position: relative;
     }
-    .cuatroNovedades {
+    .imgList {
         border-style: dashed;
         display: inline-block;
         width: 24.65%;
         height: 8rem;
     }
+    .cuatroNovedades {
+        display: inline;
+        margin: 0;
+    }   
 
 /*Página de Noticias */
 .news {

@@ -3,12 +3,7 @@ import {filterByTitle} from './data.js'
 import data from './data/steam/steam.js';
 
 // // Nodos
-let noticiaPrincipal = document.querySelector('#noticiaPrincipal').innerHTML = `
-    <div id="noticiaPrincipal">${data.appnews.newsitems[0].title}
-    <img src="${data.appnews.newsitems[0].img}">
-    <p>${data.appnews.newsitems[0].contents}</p>
-    </div>`
-    
+let newsPanel = document.querySelector('#newsPanel')
 // 'let input' trae el input del DOM en el cual tiene el id #wordSearch.
 let input = document.querySelector('#wordSearch')
 
@@ -33,7 +28,19 @@ const getInputSearch = () => {
 // // Eventos
 //Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
 a.addEventListener('click', getInputSearch)
-    
+
+newsPanel.innerHTML = `
+<div id="noticiaPrincipal">
+<a href="${data.appnews.newsitems[0].url}" title="${data.appnews.newsitems[0].title}"  target="_blank"><img src="${data.appnews.newsitems[0].img}" class="principal"></a>
+</div>
+<div>
+  <ul>
+  <li class= "cuatroNovedades" id="noticia1"><a href="${data.appnews.newsitems[1].url}" title="${data.appnews.newsitems[1].title}" target="_blank"><img src="${data.appnews.newsitems[1].img}" class="imgList"></a></li>
+  <li class= "cuatroNovedades" id="noticia2"><a href="${data.appnews.newsitems[3].url}" title="${data.appnews.newsitems[3].title}" target="_blank"><img src="${data.appnews.newsitems[3].img}" class="imgList"></a></li>
+  <li class= "cuatroNovedades" id="noticia3"><a href="${data.appnews.newsitems[5].url}" title="${data.appnews.newsitems[5].title}" target="_blank"><img src="${data.appnews.newsitems[5].img}" class="imgList"></a></li>
+  <li class= "cuatroNovedades" id="noticia4"><a href="${data.appnews.newsitems[7].url}" title="${data.appnews.newsitems[7].title}" target="_blank"><img src="${data.appnews.newsitems[7].img}" class="imgList"></a></li>
+  </ul>
+</div>  `
 // console.log(filtTitle);
 
 // // //Búsqueda por palabra
