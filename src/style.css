@@ -68,25 +68,40 @@ aside {
     background-color: black;
     margin: 0 2em;
 }
+.menu > li {
+    position: relative;
+    /*display: inline-block;*/
+}
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+}
 .menu li a {
     display: block;
     width: 100%;
     padding: 6px 20px;
 }
+.menu li a:hover {
+    background-color: rgb(148, 164, 165);
+    transition: all .3s;
+}
+
+/* Submenú de Categorías */
+.submenu-categ {
+    position: absolute;
+    background: coral;
+}
+.submenu-categ li a {
+    display: block;
+    padding: 15px;
+}
+.menu li:hover .submenu-categ {
+    display: block;
+}
 .submenu-categ a {
     float: left;
 }
-.submenu-categ a:hover {
-    background-color: #757575;
-}
-.submenu-categ ul li {
-    display: none;
-    /*position: absolute;*/
-    min-width: 300px;
-}
-.submenu-categ ul:hover > li {
-    display: block;
-}
+
 .btn-menu {
     display: none;
     width: 25px;
@@ -144,6 +159,7 @@ aside {
 .pageFooter {
     background: #111a24;
     padding: 0.5rem 0;
+    margin-top: 8em;
     font-size: 0.9rem;
 }
 .footerImages {
@@ -171,3 +187,39 @@ hr {
     margin: 0 auto;
 }
 
+
+/* Prueba menú desplegable */
+.nav-aside {
+    width: 170px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    background: brown;
+    float: right;
+}
+.nav-aside > li {
+   position: relative;
+}
+.nav-menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: chartreuse;
+}
+.nav-menu li a:hover {
+    background-color: darkgray;
+}
+/* Submenú */
+.nav-submenu {
+    position: absolute;
+    background: darkorange;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.nav-submenu li a {
+    display: block;
+    padding: 5px;
+}
+.nav-menu li:hover .nav-submenu {
+    visibility: visible;
+    opacity: 1;
+}

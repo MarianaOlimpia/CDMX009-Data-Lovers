@@ -37,36 +37,30 @@
       </nav>
     </div>
 
-  <!--Aside-->
-  <aside>
-    <div class="contenedor-aside">
-      <img src="img/iconos/menu.svg" class="btn-menu icono" alt="Ícono categorias">
-      <a href="#" >Menú</a><!--Botón menú para dispositivos móviles-->
+    <!--Aside-->
+    <aside>
+      <nav class="nav-aside">
+          <ul class="nav-menu"><!--Menú general de aside-->
+              <li><!-- Buscador por palabra-->
+                  <input type="text" id="wordSearch" placeholder="Buscar por palabra">
+                  <a id="elClick" href="#">
+                    <img src="img/iconos/buscar.svg" id="iconSearch"
+                    width="18px" alt="Ícono de búsqueda">
+                  </a>
+              </li>
 
-      <ul class="menu"><!--Menú general de aside-->
-        <li><!-- Buscador por palabra-->
-          <input type="text" id="wordSearch" placeholder="Buscar por palabra">
-          <a id="elClick" href="#">
-            <img src="img/iconos/buscar.svg" id="iconSearch"
-            width="18px" alt="Ícono de búsqueda">
-          </a>
-        </li>
-
-        <li class="submenu-categ"><!-- Categorías -->
-          <img src="img/iconos/categorias.svg" width="15px" alt="Ícono categorias">
-          <a href="#">Categorías</a>
-          <img src="img/iconos/flecha-hacia-abajo.svg" width="15px" alt="Ícono categorias">
-          <ul><!--Submenú de categorías-->
-            <li><a href="#" id="all">Todas las noticias</a></li>
-            <li><a href="#" id="blog">Steam Blog</a></li>
-            <li><a href="#" id="pcGamer">PC Gamer</a></li>
-            <li><a href="#" id="productUpdate">Product Updates</a></li>
-            <li><a href="#" id="euro">Eurogamer</a></li>
-            <li><a href="#" id="rps">Rock, Paper, Shotgun</a></li>  
-          </ul>
-        </li>
-      </ul>
-    </div>
+              <li><a href="#">Categorías</a><!--Submenú de categorías-->
+                  <ul class="nav-submenu"><!-- Categorías -->
+                      <li><a href="#" id="all">Todas las noticias</a></li>
+                      <li><a href="#" id="blog">Steam Blog</a></li>
+                      <li><a href="#" id="pcGamer">PC Gamer</a></li>
+                      <li><a href="#" id="productUpdate">Product Updates</a></li>
+                      <li><a href="#" id="euro">Eurogamer</a></li>
+                      <li><a href="#" id="rps">Rock, Paper, Shotgun</a></li> 
+                  </ul><!-- Categorías -->
+              </li><!--Submenú de categorías-->
+          </ul><!--Menú general de aside-->
+      </nav>
   </aside>
 
     <!--Panel de Novedades-->
