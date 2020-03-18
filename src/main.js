@@ -13,6 +13,9 @@ let a = document.querySelector('#elClick')
 // 'let prinTitleSearch' es para crear la lista de noticias resultado de la búsqueda por título.
 let printTitleSearch = document.createElement ('li');
 
+let categories= document.querySelectorAll(".categories");
+console.log(categories);
+
 
 // //Funciones
 
@@ -21,8 +24,17 @@ const getInputSearch = () => {
     let value = input.value
     let lista = filterByTitle(value)
     // recorrer la lista y colocar los nodos 
-
-    console.log(lista);
+newsPanel.style.display='none';
+let mostrarNoticias = document.querySelector('.mostrarNoticias')
+mostrarNoticias.innerHTML += `
+      <section class="resultados">
+        <article class="noticia">
+          <h3>${lista[0].title}</h3>
+          <p>${lista[0].contents}</p>
+          <img src="${lista[0].img}" alt="${lista.title}">
+        </article>
+      </section>`
+//    console.log(lista);
 }
 
 // // Eventos
