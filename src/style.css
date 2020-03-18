@@ -102,13 +102,13 @@ ul {
     position: relative;
 }
     .principal {
-        border-style: dashed;
+        border-style: solid;
         height: 20rem;
         width: 100%;
         position: relative;
     }
     .imgList {
-        border-style: dashed;
+        border-style: solid;
         display: inline-block;
         width: 24.65%;
         height: 8rem;
