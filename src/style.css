@@ -128,6 +128,7 @@ ul {
     margin: 2%;
     display: flex;
     flex-direction: column;
+    border-color: rgba(138, 190, 219, 0.527);
 }
     .noticia img {
         width: 10rem;
