@@ -14,7 +14,7 @@ let a = document.querySelector('#elClick')
 let printTitleSearch = document.createElement ('li');
 
 let categories= document.querySelectorAll(".categories");
-console.log(categories);
+//console.log(categories);
 
 
 // //Funciones
@@ -26,14 +26,17 @@ const getInputSearch = () => {
     // recorrer la lista y colocar los nodos 
 newsPanel.style.display='none';
 let mostrarNoticias = document.querySelector('.mostrarNoticias')
-mostrarNoticias.innerHTML += `
+for(let searchFilter of lista) {
+  //console.log(prueba.title);
+  mostrarNoticias.innerHTML += `
       <section class="resultados">
         <article class="noticia">
-          <h3>${lista[0].title}</h3>
-          <p>${lista[0].contents}</p>
-          <img src="${lista[0].img}" alt="${lista.title}">
+          <h3><a href="${searchFilter.url}">${searchFilter.title}</a></h3>
+          <p>${searchFilter.contents}</p>
+          <a href="${searchFilter.url}"><img src="${searchFilter.img}" alt="${searchFilter.title}"></a>
         </article>
       </section>`
+}
 //    console.log(lista);
 }
 
