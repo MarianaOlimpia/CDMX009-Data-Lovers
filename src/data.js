@@ -8,6 +8,11 @@ export function filterByTitle(title){
   return data.appnews.newsitems.filter(titulo =>titulo.title.toLowerCase().includes(title.toLowerCase())) // no debe ser exactamente igual (regex)
 }
 
+//Función para traer todos los títulos.
+export function getAllNews(title){
+  return data.appnews.newsitems.filter(titulo =>titulo.title.includes(title) // no debe ser exactamente igual (regex)
+}
+console.log(getAllNews);
  
 
 //Ciclo que trae todas las noticias por título.

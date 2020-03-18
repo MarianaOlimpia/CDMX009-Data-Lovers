@@ -1,5 +1,5 @@
 //Importamos la función filterBYTitle (que filtra por título) del archivo data.js al main.js
-import {filterByTitle} from './data.js'
+import {filterByTitle, getAllNews} from './data.js'
 import data from './data/steam/steam.js';
 
 // // Nodos
