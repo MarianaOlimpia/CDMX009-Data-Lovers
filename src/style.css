@@ -117,25 +117,23 @@ ul {
         display: inline;
         margin: 0;
     }   
-
-/*Página de Noticias */
-.news {
-    width: 60%;
-    margin: 2rem;
-    color: #C6D4DF;
-  }
-    .news h1, h3 {
-      margin: 1rem;
+/*mostrar noticias*/
+.resultados {
+    width: 70%;
+    margin-left: 5%;
+}
+.noticia {
+    border-style: solid;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+}
+    .noticia img {
+        width: 10rem;
+        height: 5rem;
     }
-    .news img {
-      width: 70%;
-      height: 70%;
-      margin: 1rem;
-    }
-    .botonesOpciones li {
-      width: 5%;
-      height: 5%;
-      display: inline-flex;
+    .noticia p {
+        color: #c6d4df;
     }
 
 /* Footer */
