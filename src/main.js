@@ -29,6 +29,7 @@ const getInputSearch = () => {
 //Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
 a.addEventListener('click', getInputSearch)
 
+//
 newsPanel.innerHTML = `
 <div id="noticiaPrincipal">
 <a href="${data.appnews.newsitems[0].url}" title="${data.appnews.newsitems[0].title}"  target="_blank"><img src="${data.appnews.newsitems[0].img}" class="principal"></a>
