@@ -5,7 +5,7 @@ import data from './data/steam/steam.js';
 
 //Función para filtrar por título
 export function filterByTitle(title){
-  return data.appnews.newsitems.filter(titulo =>titulo.title.includes(title)) // no debe ser exactamente igual (regex)
+  return data.appnews.newsitems.filter(titulo =>titulo.title.toLowerCase().includes(title.toLowerCase())) // no debe ser exactamente igual (regex)
 }
 
  

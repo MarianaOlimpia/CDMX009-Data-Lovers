@@ -26,6 +26,7 @@ const getInputSearch = () => {
     // recorrer la lista y colocar los nodos 
 newsPanel.style.display='none';
 let mostrarNoticias = document.querySelector('.mostrarNoticias')
+mostrarNoticias.innerHTML = ""
 for(let searchFilter of lista) {
   //console.log(prueba.title);
   mostrarNoticias.innerHTML += `
