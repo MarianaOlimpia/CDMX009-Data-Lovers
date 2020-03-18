@@ -78,7 +78,8 @@ ul {
 /* Submenú */
 .nav-submenu {
     position: absolute;
-    background: darkorange;
+    width: 230px;
+    background: #4F94BC;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
