@@ -324,6 +324,43 @@ No tienes tiempo ilimitado para trabajar, así es que deberás priorizar.
 <p><img src="https://github.com/MarianaOlimpia/CDMX009-Data-Lovers/blob/master/src/img/Result1.jpg"></p>
 <p><img src="https://github.com/MarianaOlimpia/CDMX009-Data-Lovers/blob/master/src/img/Result2.jpg"></p>
 
+Objetivos de aprendizaje - Mariana Olimpia
+
+UX
+ [x]Diseñar la aplicación pensando y entendiendo al usuario.
+ [x]Crear prototipos para obtener feedback e iterar.
+ [x]Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+ [x]Planear y ejecutar tests de usabilidad.
+HTML y CSS
+ [x]Entender y reconocer por qué es importante el HTML semántico.
+ [x]Identificar y entender tipos de selectores en CSS.
+ [x]Entender como funciona flexbox en CSS.
+ [x]Construir tu aplicación respetando el diseño planeado (maquetación).
+DOM
+ [x]Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
+ [x]Manejar eventos del DOM. (addEventListener)
+ [x]Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
+Javascript
+ [x]Manipular arrays (filter | map | sort | reduce).
+ [x]Manipular objects (key | value).
+ [x]Entender el uso de condicionales (if-else | switch).
+ [x]Entender el uso de bucles (for | forEach).
+ [x]Entender la diferencia entre expression y statements.
+ [x]Utilizar funciones (parámetros | argumentos | valor de retorno).
+ [ ]Entender la diferencia entre tipos de datos atómicos y estructurados.
+ [x]Utilizar ES Modules (import | export).
+Pruebas Unitarias (testing)
+ [ ]Testear funciones (funciones puras).
+Git y GitHub
+ [x]Ejecutar comandos de git (add | commit | pull | status | push).
+ [x]Utilizar los repositorios de GitHub (clone | fork | gh-pages).
+ [x]Colaborar en Github (pull requests).
+Buenas prácticas de desarrollo
+ [x]Organizar y dividir el código en módulos (Modularización).
+ [x]Utilizar identificadores descriptivos (Nomenclatura | Semántica).
+ [x]Utilizar linter para seguir buenas prácticas (ESLINT).
+
+
 Como mínimo, tu implementación debe:
 
 1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
