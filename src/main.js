@@ -40,6 +40,7 @@ for(let searchFilter of lista) {
           <a href="${searchFilter.url}"><img src="${searchFilter.img}" alt="${searchFilter.title}"></a>
         </article>
       </section>`
+ }
 }
 
 // Obtiene la lista de noticias al seleccionar la categoría "Todas las categorías".
@@ -57,13 +58,14 @@ const getCatAllNews = () => {
             <a href="${searchAllNews.url}"><img src="${searchAllNews.img}" alt="${searchAllNews.title}"></a>
           </article>
         </section>`
+  }      
 }
 
 // // Eventos
 //Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
-a.addEventListener('click', getInputSearch)
+a.addEventListener('click', getInputSearch);
 
-catAllNews.addEventListener('click', getCatAllNews)
+catAllNews.addEventListener('click', getCatAllNews);
 
 //
 newsPanel.innerHTML = `

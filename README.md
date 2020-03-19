@@ -148,6 +148,8 @@ Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
 contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
 el problema (o problemas) que tiene tu usuario.
 
+Nuestro proyecto se basó en el rediseño de la página interna dedicada a las noticias de la web de Steam, debido a que cuenta con una interfaz poco amigable. Por ello nuestro objetivo central fue diseñar una página capaz de mostrar las noticias principales más recientes, ofrecer un buscador por palabra para encontrar temas o títulos relacionados con un interés particular y una sección con categorías que permitiera acotar la búsqueda por temas frecuentes entre la comunidad de Steam. 
+
 ### Historias de usuario
 
 Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
@@ -161,6 +163,108 @@ Criterios de Aceptación para cada una.
 En la medida de lo posible, termina de construir una historia de usuario antes
 de pasar a la siguiente (Cumple con Definición de Terminado + Criterios de
 Aceptación).
+
+H.U.1
+Como: Jugador o usuario general
+Quiero: Consultar las noticias de Steam.
+Para: Mirar el "panel de novedades", el buscador por palabra, el "menú de categorías" y el aside de "Últimas noticias" y "Lo más leído".
+
+Criterios de Aceptación
+- Contar con prototipo en Figma.
+- Maquetación básica en HTML y CSS.
+- (se pasó a H.U. 2) Que en la sección "Últimas noticias" se despliegue un menú con las siguientes tabs: 24 hrs, 1 semana y 1 mes.
+
+Definición de Terminado
+- El espacio del Panel de Novedades debe estar creado aunque sea con otra imágenes y sin funcionalidad.
+- El espacio del Menú de Categorías debe estar creado aunque no cuenten con funcionalidad.
+- Tener prototipo.
+- Que esten los espacios con colores y letras me doy por satisfecha.
+
+H.U.2
+Como: Jugador
+Quiero: Interactuar con el Panel de Novedades.
+Para: Conocer las "4 noticias más relevantes del día".
+
+Criterios de Aceptación
+- Alimentar con información el Panel de Novedades.
+- Contar con slide para sub novedades.
+- Que en la sección "Últimas noticias" se despliegue un menú con las siguientes tabs: 24 hrs, 1 semana y 1 mes.
+
+Definición de Terminado
+- Terminar maquetado con HTML y CSS.
+- Realizar función de filtrado para traer la información necesaria.
+- Hacer funciones para cambio de pantallas.
+- Añadir evento de mostrar noticias al click en Panel de Novedades y Aside.
+- Maquetar pantalla para mostrar lista de noticias según la categoría seleccionada.
+
+H.U.3
+Como: Jugador
+Quiero: Utilizar el buscador por texto.
+Para: Encontrar una noticia por un título o una palabra.
+
+Criterios de Aceptación
+- Poder ingresar texto.
+- Que despliegue una ventana con los titulares y noticias relacionadas con el texto ingresado.
+
+Definición de Terminado
+- Que el usuario pueda buscar una noticia a través del buscador de texto.
+- Tener Code Review.
+- Testear con usuarios.
+- Aplicar los cambios sugeridos.
+- Comprobar su usabilidad.
+- Estar almacenado en el repositorio.
+
+H.U.4
+Como: Jugador.
+Quiero: Utilizar el Menú de Categorías.
+Para: Elegir una categoría y sólo mirar las noticias relacionadas con ella.
+
+Criterios de Aceptación
+- Que se pueda seleccionar una categoría.
+- Que muestre la información de acuerdo a la categoría seleccionada.
+- Que pueda elegir una noticia para ver.
+- Que pueda ver la noticia electa.
+
+Definición de Terminado
+- Que el usuario pueda elegir una categoría desde el menú, después una noticia y leerla.
+- Tener Code Review.
+- Testear con usuarios.
+- Comprobar su usabilidad.
+- Estar almacenado en el repositorio.
+
+H.U.5
+Como: Jugador.
+Quiero: Ver las últimas noticias y/o las más leídas.
+Para: Estar informado al respecto.
+
+Criterios de Aceptación
+- Que el menú de las "Últimas noticias" y "Las más leídas" sea en tabs.
+- Que cada tab despliegue las noticias correspondientes a su tab.
+- Que muestre máximo 5 por tab.
+- Que en la tab de "Las más leídas" se despliegue un sub menú con las siguientes tabs: 24hrs, 1 semana y Por fecha.
+
+Definición de Terminado
+- Que cumpla con los criterios de aceptación. (la selección de noticia por hrs, semana y  fecha es opcional).
+- Tener Code Review.
+- Tener Code Review.
+- Aplicar los cambios sugeridos.
+- Comprobarlos usabilidad.
+
+H.U.6
+Como: Jugador.
+Quiero: Elegir una noticia, ya sea en el Panel de Novedades o en el aside de "Últimas noticias".
+Para: Leerla.
+
+Criterios de Aceptación
+- Si da click en el Panel de Novedades o en el aside de "Últimas noticias" debe abrir la noticia electa.
+
+Definición de Terminado
+- Que el usuario pueda elegir y visualizar la noticia electa, ya sea en Panel de Novedades o en el aside.
+- Tener Code Review.
+- Testear con usuarios.
+- Aplicar los cambios sugeridos.
+- Comprobar su usabilidad.
+- Estar almacenado en el repositorio.
 
 ### Diseño de la Interfaz de Usuario
 
@@ -192,6 +296,8 @@ Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
 en base a los resultados, deberás iterar tus diseños. Cuéntanos
 qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
 mejoraste en tu propuesta final.
+
+- El problema es que no lo testeamos debido a que nuestro diseño se basó en el diseño de Steam y de otra página llamada Hispan TV. Por lo cual nos confiamos pensando que ambas plataformas son utilizadas todo el tiempo y son altamente funcionales.
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
