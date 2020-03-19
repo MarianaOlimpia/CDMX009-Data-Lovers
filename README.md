@@ -141,6 +141,15 @@ y de equipo.
 
 Los criterios que deberás considerar para saber si has completado este proyecto
 son:
+- Prototipado de alta fidelidad terminado.
+- Maquetado terminado.
+- Filtrar la data.
+- Mostrar la información al usuario.
+- Permitir al usuario filtrar por palabra y por categoría.
+- Que el diseño sea Responsive Web Design.
+- Realizar pruebas unitarias.
+- Completar READ.ME.
+
 
 ### Definición del producto
 
@@ -275,6 +284,8 @@ solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
 iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
 `README.md`.
 
+<p><img src="https://github.com/MarianaOlimpia/CDMX009-Data-Lovers/blob/master/src/img/Boceto%20Data%20Lovers.jpeg"></p>
+
 #### Prototipo de alta fidelidad
 
 Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
@@ -290,6 +301,11 @@ El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
 desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
 diseño debe seguir los fundamentos de _visual design_.
 
+<p><img src="https://github.com/MarianaOlimpia/CDMX009-Data-Lovers/blob/master/src/img/prot0.jpg"></p>
+<p><img src="https://github.com/MarianaOlimpia/CDMX009-Data-Lovers/blob/master/src/img/prot1.jpg"></p>
+<p><img src="https://github.com/MarianaOlimpia/CDMX009-Data-Lovers/blob/master/src/img/prot2.jpg"></p>
+<p><img src="https://github.com/MarianaOlimpia/CDMX009-Data-Lovers/blob/master/src/img/prot3.jpg"></p>
+
 #### Testeos de usabilidad
 
 Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
@@ -304,6 +320,9 @@ mejoraste en tu propuesta final.
 Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
 **No** es necesario que construyas la interfaz exactamente como la diseñaste.
 No tienes tiempo ilimitado para trabajar, así es que deberás priorizar.
+
+<p><img src="https://github.com/MarianaOlimpia/CDMX009-Data-Lovers/blob/master/src/img/Result1.jpg"></p>
+<p><img src="https://github.com/MarianaOlimpia/CDMX009-Data-Lovers/blob/master/src/img/Result2.jpg"></p>
 
 Como mínimo, tu implementación debe:
 
