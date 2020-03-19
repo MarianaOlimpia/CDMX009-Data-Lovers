@@ -28,11 +28,11 @@ const getInputSearch = () => {
     let lista = filterByTitle(value)
     // recorrer la lista y colocar los nodos 
 newsPanel.style.display='none';
-let mostrarNoticias = document.querySelector('.mostrarNoticias')
-mostrarNoticias.innerHTML = ""
+let showNews = document.querySelector('.showNews')
+showNews.innerHTML = ""
 for(let searchFilter of lista) {
   //console.log(prueba.title);
-  mostrarNoticias.innerHTML += `
+  showNews.innerHTML += `
       <section class="resultados">
         <article class="noticia">
           <h3><a href="${searchFilter.url}">${searchFilter.title}</a></h3>
@@ -43,14 +43,14 @@ for(let searchFilter of lista) {
  }
 } 
 
-// Obtiene la lista de noticias al seleccionar la categoría "Todas las categorías".
+//Obtiene la lista de noticias al seleccionar la categoría "Todas las categorías".
 const getCatAllNews = () => {
-  let allNews = a.getAllNews('#allTheNews')
-  newsList.style.display='none';
-  let mostrarNoticias = document.querySelector('.mostrarNoticias')
+  let allNews = catAllNews.getAllNews('#allTheNews')
+  newsPanel.style.display='none';
+  let showNews = document.querySelector('.showNews')
   for(let searchAllNews of lista) {
     //console.log(prueba.title);
-    mostrarNoticias.innerHTML += `
+    showNews.innerHTML += `
         <section class="resultados">
           <article class="noticia">
             <h3><a href="${searchAllNews.url}">${searchAllNews.title}</a></h3>

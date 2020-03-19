@@ -7,12 +7,13 @@ import data from './data/steam/steam.js';
 export function filterByTitle(title){
   return data.appnews.newsitems.filter(titulo =>titulo.title.toLowerCase().includes(title.toLowerCase())) // no debe ser exactamente igual (regex)
 }
+//console.log(filterByTitle);
 
 //Función para traer todos los títulos.
 export function getAllNews(title){
-  return data.appnews.newsitems.filter(titulo =>titulo.title.includes(title)) // no debe ser exactamente igual (regex)
+  return data.appnews.newsitems.filter(titulo =>titulo.title.includes(title))
 }
-console.log(getAllNews);
+//console.log(getAllNews);
  
 
 //Ciclo que trae todas las noticias por título.
