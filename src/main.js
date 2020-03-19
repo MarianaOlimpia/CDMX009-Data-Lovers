@@ -1,4 +1,4 @@
-//Importamos la función filterBYTitle (que filtra por título) del archivo data.js al main.js
+// Importamos la función filterBYTitle (que filtra por título) del archivo data.js al main.js
 import {filterByTitle, getAllNews} from './data.js'
 import data from './data/steam/steam.js';
 
@@ -41,7 +41,7 @@ for(let searchFilter of lista) {
         </article>
       </section>`
  }
-}
+} 
 
 // Obtiene la lista de noticias al seleccionar la categoría "Todas las categorías".
 const getCatAllNews = () => {
