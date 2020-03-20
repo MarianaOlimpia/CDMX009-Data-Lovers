@@ -1,5 +1,5 @@
 // Importamos la función filterBYTitle (que filtra por título) del archivo data.js al main.js
-import {filterByTitle, getAllNews, getSteamBlog} from './data.js'
+import {filterByTitle, getAllNews, getPcGamer} from './data.js'
 import data from './data/steam/steam.js';
 
 // // Nodos
@@ -11,10 +11,11 @@ let input = document.querySelector('#wordSearch')
 let a = document.querySelector('#elClick')
 
 //let catAllNews trae el enlace que corresponde a la categoría "Todas las categorías".
-let catAllNews = document.querySelector('#allTheNews')
+const catAllNews = document.querySelector('#allTheNews')
 let lista = [];
 let showNews = document.querySelector('.showNews')
 let catTF2blog = document.querySelector('#tf2_blog')
+const catPcGamer = document.querySelector('#pcgamer')
 
 // //Funciones
 const showAndHide = () => {
@@ -32,6 +33,7 @@ for(let searchFilter of lista) {
       </section>`
  }
 }
+
 //Obtiene la búsqueda del input y retorna el array con los resultados.
 const getInputSearch = () => {
     let value = input.value
@@ -53,11 +55,19 @@ const getSteamNews = () => {
   showAndHide()
 } 
 
+const getPcGamerNews = () => {
+  lista = getPcGamer()
+  console.log(lista)
+  showAndHide()
+}
+
 // // Eventos
 //Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
 a.addEventListener('click', getInputSearch);
 catAllNews.addEventListener('click', getCatAllNews);
 catTF2blog.addEventListener('click',getSteamNews);
+catPcGamer.addEventListener('click', getPcGamerNews);
+
 //
 newsPanel.innerHTML = `
 <div id="noticiaPrincipal">

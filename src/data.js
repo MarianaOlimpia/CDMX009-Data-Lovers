@@ -17,7 +17,10 @@ export function getAllNews(title){
 export function getSteamBlog(){
   return data.appnews.newsitems.filter(steam =>steam.feedname==='tf2_blog')
 }
-console.log(getSteamBlog);
+
+export function getPcGamer(){
+  return data.appnews.newsitems.filter(pcGamer =>pcGamer.feedname==='pcgamer')
+}
  
 
 //Ciclo que trae todas las noticias por título.
