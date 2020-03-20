@@ -1,5 +1,5 @@
 // Importamos la función filterBYTitle (que filtra por título) del archivo data.js al main.js
-import {filterByTitle, getAllNews} from './data.js'
+import {filterByTitle, getAllNews, getSteamBlog} from './data.js'
 import data from './data/steam/steam.js';
 
 // // Nodos
@@ -14,6 +14,7 @@ let a = document.querySelector('#elClick')
 let catAllNews = document.querySelector('#allTheNews')
 let lista = [];
 let showNews = document.querySelector('.showNews')
+let catTF2blog = document.querySelector('#tf2_blog')
 
 // //Funciones
 const showAndHide = () => {
@@ -46,11 +47,17 @@ const getCatAllNews = () => {
   showAndHide()
 } 
 
+const getSteamNews = () => {
+  lista = getSteamBlog()
+  console.log(lista)
+  showAndHide()
+} 
+
 // // Eventos
 //Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
 a.addEventListener('click', getInputSearch);
 catAllNews.addEventListener('click', getCatAllNews);
-
+catTF2blog.addEventListener('click',getSteamNews);
 //
 newsPanel.innerHTML = `
 <div id="noticiaPrincipal">

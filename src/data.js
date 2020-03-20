@@ -13,7 +13,11 @@ export function filterByTitle(title){
 export function getAllNews(title){
   return data.appnews.newsitems.filter(titulo =>titulo.title)
 }
-//console.log(getAllNews);
+
+export function getSteamBlog(){
+  return data.appnews.newsitems.filter(steam =>steam.feedname==='tf2_blog')
+}
+console.log(getSteamBlog);
  
 
 //Ciclo que trae todas las noticias por título.
