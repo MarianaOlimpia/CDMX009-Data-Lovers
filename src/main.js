@@ -12,59 +12,43 @@ let a = document.querySelector('#elClick')
 
 //let catAllNews trae el enlace que corresponde a la categoría "Todas las categorías".
 let catAllNews = document.querySelector('#allTheNews')
-
-// 'let prinTitleSearch' es para crear la lista de noticias resultado de la búsqueda por título.
-let printTitleSearch = document.createElement ('li');
-
-let categories= document.querySelectorAll(".categories");
-//console.log(categories);
-
+let lista = [];
+let showNews = document.querySelector('.showNews')
 
 // //Funciones
-
-//Obtiene la búsqueda del input y retorna el array con los resultados.
-const getInputSearch = () => {
-    let value = input.value
-    let lista = filterByTitle(value)
-    // recorrer la lista y colocar los nodos 
+const showAndHide = () => {
 newsPanel.style.display='none';
-let showNews = document.querySelector('.showNews')
 showNews.innerHTML = ""
 for(let searchFilter of lista) {
   //console.log(prueba.title);
   showNews.innerHTML += `
       <section class="resultados">
         <article class="noticia">
-          <h3><a href="${searchFilter.url}">${searchFilter.title}</a></h3>
+          <h3><a href="${searchFilter.url}" target="_blank">${searchFilter.title}</a></h3>
           <p>${searchFilter.contents}</p>
-          <a href="${searchFilter.url}"><img src="${searchFilter.img}" alt="${searchFilter.title}"></a>
+          <a href="${searchFilter.url}" target="_blank"><img src="${searchFilter.img}" alt="${searchFilter.title}"></a>
         </article>
       </section>`
  }
-} 
+}
+//Obtiene la búsqueda del input y retorna el array con los resultados.
+const getInputSearch = () => {
+    let value = input.value
+    lista = filterByTitle(value)
+    showAndHide()
+  } 
 
 //Obtiene la lista de noticias al seleccionar la categoría "Todas las categorías".
 const getCatAllNews = () => {
-  let allNews = catAllNews.getAllNews('#allTheNews')
-  newsPanel.style.display='none';
-  let showNews = document.querySelector('.showNews')
-  for(let searchAllNews of lista) {
-    //console.log(prueba.title);
-    showNews.innerHTML += `
-        <section class="resultados">
-          <article class="noticia">
-            <h3><a href="${searchAllNews.url}">${searchAllNews.title}</a></h3>
-            <p>${searchAllNews.contents}</p>
-            <a href="${searchAllNews.url}"><img src="${searchAllNews.img}" alt="${searchAllNews.title}"></a>
-          </article>
-        </section>`
-  }      
-}
+  let allNewsOption = catAllNews.id
+  lista = getAllNews(allNewsOption)
+  console.log(lista)
+  showAndHide()
+} 
 
 // // Eventos
 //Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
 a.addEventListener('click', getInputSearch);
-
 catAllNews.addEventListener('click', getCatAllNews);
 
 //

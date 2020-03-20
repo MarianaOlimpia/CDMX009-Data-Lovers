@@ -11,7 +11,7 @@ export function filterByTitle(title){
 
 //Función para traer todos los títulos.
 export function getAllNews(title){
-  return data.appnews.newsitems.filter(titulo =>titulo.title.includes(title))
+  return data.appnews.newsitems.filter(titulo =>titulo.title)
 }
 //console.log(getAllNews);
  
