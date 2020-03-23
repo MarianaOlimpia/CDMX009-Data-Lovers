@@ -8,7 +8,7 @@ describe('filterByTitle', () => {
 
   describe('filterByTitle', () => {
     it('deberia retornar el titulo que incluya la palabra Halloween', () => {
-      expect(() => filterByTitle('Halloween')).toReturn('Title: All of Halloween is happening in TF2 s Scream Fortress X');
+      expect(filterByTitle('Halloween')).toReturn('All of Halloween is happening in TF2 s Scream Fortress X');
     });
   });
 });

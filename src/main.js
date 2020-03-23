@@ -2,7 +2,7 @@
 import {
   // eslint-disable-next-line max-len
   filterByTitle, getAllNews, getSteamBlog, getPcGamer, getProductUpdates, getEurogamer, getRockPaperShotgun,
-} from './data.js'
+} from './data.js';
 import data from './data/steam/steam.js';
 
 // // Nodos
@@ -26,16 +26,16 @@ const showNews = document.querySelector('.showNews');
 const catTF2blog = document.querySelector('#tf2_blog');
 
 // const catTF2blog trae el enlace que corresponde a la categoría "Pc Gamer".
-const catPcGamer = document.querySelector('#pcgamer')
+const catPcGamer = document.querySelector('#pcgamer');
 
 // const catProductUpdates trae el enlace que corresponde a la categoría "Product Updates".
-const catProductUpdates = document.querySelector('#steam_updates')
+const catProductUpdates = document.querySelector('#steam_updates');
 
 // const catProductUpdates trae el enlace que corresponde a la categoría "Eurogamer".
-const catEurogamer = document.querySelector('#eurogamer')
+const catEurogamer = document.querySelector('#eurogamer');
 
 // const catProductUpdates trae el enlace que corresponde a la categoría "Rock, Paper, Shotgun".
-const catRPS = document.querySelector('#rps')
+const catRPS = document.querySelector('#rps');
 
 // //Funciones
 
@@ -43,6 +43,7 @@ const catRPS = document.querySelector('#rps')
 const showAndHide = () => {
   newsPanel.style.display = 'none';
   showNews.innerHTML = '';
+  // eslint-disable-next-line no-restricted-syntax
   for (const searchFilter of lista) {
     showNews.innerHTML += `
       <section class="resultados">
@@ -64,46 +65,46 @@ const getInputSearch = () => {
 
 // Obtiene la lista de noticias al seleccionar la categoría "Todas las categorías".
 const getCatAllNews = () => {
-  let allNewsOption = catAllNews.id
-  lista = getAllNews()
-  console.log(lista)
-  showAndHide()
-} 
+  // let allNewsOption = catAllNews.id;
+  lista = getAllNews();
+  // console.log(lista);
+  showAndHide();
+};
 
 // Obtiene la lista de noticias al seleccionar la categoría "Steam Blog".
 const getSteamNews = () => {
   lista = getSteamBlog();
-  console.log(lista);
+  // console.log(lista);
   showAndHide();
 };
 
 // Obtiene la lista de noticias al seleccionar la categoría "Pc Gamer".
 const getPcGamerNews = () => {
   lista = getPcGamer();
-  console.log(lista);
+  // console.log(lista);
   showAndHide();
 };
 
 // Obtiene la lista de noticias al seleccionar la categoría "Product Updates".
 const getProductUpdatesNews = () => {
-  lista = getProductUpdates()
-  console.log(lista)
-  showAndHide()
-}
+  lista = getProductUpdates();
+  // console.log(lista)
+  showAndHide();
+};
 
 // Obtiene la lista de noticias al seleccionar la categoría "Eurogamer".
 const getEurogamerNews = () => {
-  lista = getEurogamer()
-  console.log(lista)
-  showAndHide()
-}
+  lista = getEurogamer();
+  // console.log(lista)
+  showAndHide();
+};
 
 // Obtiene la lista de noticias al seleccionar la categoría "Rock, Paper, Shotgun".
 const getRPSNews = () => {
-  lista = getRockPaperShotgun()
-  console.log(lista)
-  showAndHide()
-}
+  lista = getRockPaperShotgun();
+  // console.log(lista)
+  showAndHide();
+};
 
 // // Eventos
 // Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
