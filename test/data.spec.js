@@ -1,13 +1,14 @@
 // importamos la función `example`
-import { example } from "../src/data";
+import { filterByTitle } from '../src/data';
 
-describe('example', () => {
-
+describe('filterByTitle', () => {
   it('debería ser una función', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterByTitle).toBe('function');
   });
 
-  describe('example', () => {
-    // escribe aquí tu test
+  describe('filterByTitle', () => {
+    it('deberia retornar el titulo que incluya la palabra Halloween', () => {
+      expect(() => filterByTitle('Halloween')).toReturn('Title: All of Halloween is happening in TF2 s Scream Fortress X');
+    });
   });
 });

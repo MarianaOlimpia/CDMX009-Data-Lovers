@@ -1,54 +1,23 @@
-//Aquí le estamos pidiendo que importe la función o array 'data' de './data/steam/steam.js'.
+// Aquí le estamos pidiendo que importe la función o array 'data' de './data/steam/steam.js'.
 import data from './data/steam/steam.js';
 
 // // Funciones
 
-//Función para filtrar por título
-export function filterByTitle(title){
-  return data.appnews.newsitems.filter(titulo =>titulo.title.toLowerCase().includes(title.toLowerCase())) // no debe ser exactamente igual (regex)
+// Función para filtrar por título
+export function filterByTitle(title) {
+  return data.appnews.newsitems.filter(titulo =>titulo.title.toLowerCase().includes(title.toLowerCase()));
 }
-//console.log(filterByTitle);
+// console.log(filterByTitle);
 
-//Función para traer todos los títulos.
-export function getAllNews(title){
-  return data.appnews.newsitems.filter(titulo =>titulo.title)
-}
-
-export function getSteamBlog(){
-  return data.appnews.newsitems.filter(steam =>steam.feedname==='tf2_blog')
+// Función para traer todos los títulos.
+export function getAllNews() {
+  return data.appnews.newsitems.filter(titulo =>titulo.title);
 }
 
-export function getPcGamer(){
-  return data.appnews.newsitems.filter(pcGamer =>pcGamer.feedname==='pcgamer')
+export function getSteamBlog() {
+  return data.appnews.newsitems.filter(steam =>steam.feedname === 'tf2_blog');
 }
- 
 
-//Ciclo que trae todas las noticias por título.
-/* for (let i = 0; i<filterTitle.length; i++) {
-   let newsTitle = filterTitle[i].title;
-   console.log(newsTitle);
- }
-
-console.log(filterByTitle);*/
-
-// //Intento de filtrar por palabra siguiendo video de .filter
-// var filtWord = filtTitle.filter (newTitle => {
-//   return newTitle.title.includes('All') 
-// })
-
-// console.log(filtWord);
-
-// //Función para filtrar por palabra.
-//  export const filtWord = filtTitle.filter (wordSearchTitle => {
-//   return wordSearchTitle.title.includes(getWord())
-//   })
-
-// //Ciclo que trae todas las noticias por palabra.
-//   for (let i = 0; i<filtWord.length; i++) {
-//     let newsTitle = filtWord[i].title;
-//     console.log(newsTitle);
-//   }
-// console.log(filtWord);
-
-// //
-
+export function getPcGamer() {
+  return data.appnews.newsitems.filter(pcGamer =>pcGamer.feedname === 'pcgamer');
+}
