@@ -13,29 +13,34 @@ const input = document.querySelector('#wordSearch');
 // 'a' trae el enlace que corresponde al botón de buscar en el DOM id #elClick.
 const a = document.querySelector('#elClick');
 
-// let catAllNews trae el enlace que corresponde a la categoría "Todas las categorías".
-const catAllNews = document.querySelector('#allTheNews');
+// let showNews corresponde a la sección en HTML donde se mostrarán las listas de noticias.
+const showNews = document.querySelector('.showNews');
 
 // let lista es la variable que va a contener los arrays.
 let lista = [];
 
-// let showNews corresponde a la sección en HTML donde se mostrarán las listas de noticias.
-const showNews = document.querySelector('.showNews');
+// Antiguos Nodos para Funciones Individuales.
+// // let catAllNews trae el enlace que corresponde a la categoría "Todas las categorías".
+// const catAllNews = document.querySelector('#allTheNews');
 
-// const catTF2blog trae el enlace que corresponde a la categoría "Steam Blog".
-const catTF2blog = document.querySelector('#tf2_blog');
+// // const catTF2blog trae el enlace que corresponde a la categoría "Steam Blog".
+// const catTF2blog = document.querySelector('#tf2_blog');
 
-// const catTF2blog trae el enlace que corresponde a la categoría "Pc Gamer".
-const catPcGamer = document.querySelector('#pcgamer');
+// // const catTF2blog trae el enlace que corresponde a la categoría "Pc Gamer".
+// const catPcGamer = document.querySelector('#pcgamer');
 
-// const catProductUpdates trae el enlace que corresponde a la categoría "Product Updates".
-const catProductUpdates = document.querySelector('#steam_updates');
+// // const catProductUpdates trae el enlace que corresponde a la categoría "Product Updates".
+// const catProductUpdates = document.querySelector('#steam_updates');
 
-// const catProductUpdates trae el enlace que corresponde a la categoría "Eurogamer".
-const catEurogamer = document.querySelector('#eurogamer');
+// // const catProductUpdates trae el enlace que corresponde a la categoría "Eurogamer".
+// const catEurogamer = document.querySelector('#eurogamer');
 
-// const catProductUpdates trae el enlace que corresponde a la categoría "Rock, Paper, Shotgun".
-const catRPS = document.querySelector('#rps');
+// // const catProductUpdates trae el enlace que corresponde a la categoría "Rock, Paper, Shotgun".
+// const catRPS = document.querySelector('#rps');
+
+// Intento Nodo General para Categorias
+const categories = document.querySelectorAll('.categories');
+
 
 // //Funciones
 
@@ -71,40 +76,49 @@ const getCatAllNews = () => {
   showAndHide();
 };
 
-// Obtiene la lista de noticias al seleccionar la categoría "Steam Blog".
-const getSteamNews = () => {
-  lista = getSteamBlog();
-  // console.log(lista);
-  showAndHide();
-};
+// // Obtiene la lista de noticias al seleccionar la categoría "Steam Blog".
+// const getSteamNews = () => {
+//   lista = getSteamBlog();
+//   // console.log(lista);
+//   showAndHide();
+// };
 
-// Obtiene la lista de noticias al seleccionar la categoría "Pc Gamer".
-const getPcGamerNews = () => {
-  lista = getPcGamer();
-  // console.log(lista);
-  showAndHide();
-};
+// // Obtiene la lista de noticias al seleccionar la categoría "Pc Gamer".
+// const getPcGamerNews = () => {
+//   lista = getPcGamer();
+//   // console.log(lista);
+//   showAndHide();
+// };
 
-// Obtiene la lista de noticias al seleccionar la categoría "Product Updates".
-const getProductUpdatesNews = () => {
-  lista = getProductUpdates();
-  // console.log(lista)
-  showAndHide();
-};
+// // Obtiene la lista de noticias al seleccionar la categoría "Product Updates".
+// const getProductUpdatesNews = () => {
+//   lista = getProductUpdates();
+//   // console.log(lista)
+//   showAndHide();
+// };
 
-// Obtiene la lista de noticias al seleccionar la categoría "Eurogamer".
-const getEurogamerNews = () => {
-  lista = getEurogamer();
-  // console.log(lista)
-  showAndHide();
-};
+// // Obtiene la lista de noticias al seleccionar la categoría "Eurogamer".
+// const getEurogamerNews = () => {
+//   lista = getEurogamer();
+//   // console.log(lista)
+//   showAndHide();
+// };
 
-// Obtiene la lista de noticias al seleccionar la categoría "Rock, Paper, Shotgun".
-const getRPSNews = () => {
-  lista = getRockPaperShotgun();
-  // console.log(lista)
-  showAndHide();
-};
+// // Obtiene la lista de noticias al seleccionar la categoría "Rock, Paper, Shotgun".
+// const getRPSNews = () => {
+//   lista = getRockPaperShotgun();
+//   // console.log(lista)
+//   showAndHide();
+// };
+
+// Funcion para Categorias en General
+for (let i = 0; i < categories.length; i += 1) {
+   categories[i].addEventListener('click', () => {
+    const categoryId = categories[i].id;
+    const types = filterData(elePokemon);
+    showAndHide();
+  });
+}
 
 // // Eventos
 // Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
