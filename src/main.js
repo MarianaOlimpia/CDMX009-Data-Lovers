@@ -1,7 +1,7 @@
 // Importamos la función filterBYTitle (que filtra por título) del archivo data.js al main.js
 import {
   // eslint-disable-next-line max-len
-  filterByTitle, getAllNews, getSteamBlog, getPcGamer, getProductUpdates, getEurogamer, getRockPaperShotgun,
+  filterByTitle, getAllNews, getSteamBlog, getPcGamer, getProductUpdates, getEurogamer, getRockPaperShotgun, filterNewsByFeedname
 } from './data.js';
 import data from './data/steam/steam.js';
 
@@ -38,8 +38,18 @@ let lista = [];
 // // const catProductUpdates trae el enlace que corresponde a la categoría "Rock, Paper, Shotgun".
 // const catRPS = document.querySelector('#rps');
 
-// Intento Nodo General para Categorias
-const categories = document.querySelectorAll('.categories');
+// Nodo para traer todas las categorías
+const category = document.querySelectorAll('.categories');
+
+// // Eventos
+// Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
+a.addEventListener('click', getInputSearch);
+catAllNews.addEventListener('click', getCatAllNews);
+catTF2blog.addEventListener('click', getSteamNews);
+catPcGamer.addEventListener('click', getPcGamerNews);
+catProductUpdates.addEventListener('click', getProductUpdatesNews);
+catEurogamer.addEventListener('click', getEurogamerNews);
+catRPS.addEventListener('click', getRPSNews);
 
 
 // //Funciones
@@ -111,26 +121,16 @@ const getCatAllNews = () => {
 //   showAndHide();
 // };
 
-// Funcion para Categorias en General
-for (let i = 0; i < categories.length; i += 1) {
-   categories[i].addEventListener('click', () => {
-    const categoryId = categories[i].id;
-    const types = filterData(elePokemon);
+// Función para Submenú de Categorías
+for (let i = 0; i < category.length; i += 1) {
+  category[i].addEventListener('click', () => {
+    const categoryId = category[i].id;
+    const categories = filterNewsByFeedname(categoryId);
     showAndHide();
   });
 }
 
-// // Eventos
-// Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
-a.addEventListener('click', getInputSearch);
-catAllNews.addEventListener('click', getCatAllNews);
-catTF2blog.addEventListener('click', getSteamNews);
-catPcGamer.addEventListener('click', getPcGamerNews);
-catProductUpdates.addEventListener('click', getProductUpdatesNews);
-catEurogamer.addEventListener('click', getEurogamerNews);
-catRPS.addEventListener('click', getRPSNews);
-
-//
+// Imprimiendo noticias en Panel de Novedades. 
 newsPanel.innerHTML = `
 <div id="noticiaPrincipal">
 <a href="${data.appnews.newsitems[0].url}" title="${data.appnews.newsitems[0].title}"  target="_blank"><img src="${data.appnews.newsitems[0].img}" class="principal"></a>
@@ -143,4 +143,3 @@ newsPanel.innerHTML = `
   <li class= "cuatroNovedades" id="noticia4"><a href="${data.appnews.newsitems[7].url}" title="${data.appnews.newsitems[7].title}" target="_blank"><img src="${data.appnews.newsitems[7].img}" class="imgList"></a></li>
   </ul>
 </div>  `;
-// console.log(filtTitle);
