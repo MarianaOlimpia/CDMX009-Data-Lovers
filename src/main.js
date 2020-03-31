@@ -41,6 +41,9 @@ let lista = [];
 // Nodo para traer todas las categorías
 const category = document.querySelectorAll('.categories');
 
+// Nodo para guardar la categoría seleccionada por el usuario.
+let filteredNews = [];
+
 // // Eventos
 // Agrega el evento 'click' al enlace que corresponde al botón de búsqueda.
 a.addEventListener('click', getInputSearch);
@@ -121,14 +124,16 @@ const getCatAllNews = () => {
 //   showAndHide();
 // };
 
-// Función para Submenú de Categorías
+// Función que genera el array según la categoría electa en Submenú de Categorías.
 for (let i = 0; i < category.length; i += 1) {
   category[i].addEventListener('click', () => {
-    const categoryId = category[i].id;
-    const categories = filterNewsByFeedname(categoryId);
-    showAndHide();
+    let categoryId = category[i].id;
+    filteredNews = filterNewsByFeedname(categoryId);
+    console.log(filteredNews) // 1 son correctas // 2 tunear el show and hide (showNews) 3.-  Usar la lista para dibujar las noticias
+    showAndHide(filteredNews);
   });
 }
+
 
 // Imprimiendo noticias en Panel de Novedades. 
 newsPanel.innerHTML = `

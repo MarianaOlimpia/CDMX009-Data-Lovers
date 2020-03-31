@@ -16,8 +16,8 @@ export function getAllNews() {
 }
 
 // Función para traer los títulos por feedname.
-export function filterNewsByFeedname() {
-  return data.appnews.newsitems.filter((feednames) => feednames.feedname);
+export function filterNewsByFeedname(categoryId) {
+  return data.appnews.newsitems.filter((news) => news.feedname === categoryId);
 }
 
 // Función para traer sólo las noticias de "Tf2 Blog".
