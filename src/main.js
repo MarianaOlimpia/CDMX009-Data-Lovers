@@ -10,8 +10,8 @@ const newsPanel = document.querySelector('#newsPanel');
 const input = document.querySelector('#wordSearch');
 // 'a' trae el enlace que corresponde al botón de buscar en el DOM id #elClick.
 const a = document.querySelector('#elClick');
-// let showNews corresponde a la sección en HTML donde se mostrarán las listas de noticias.
-const showNews = document.querySelector('.showNews');
+// let newsList corresponde a la sección en HTML donde se mostrarán las listas de noticias.
+const newsList = document.querySelector('.news');
 // let lista es la variable que va a contener los arrays.
 let lista = [];
 // let catAllNews trae el enlace que corresponde a la categoría "Todas las categorías".
@@ -21,12 +21,12 @@ const category = document.querySelectorAll('.categories');
 
 // //Funciones
 // Oculta el panel de novedades para mostrar el espacio donde se imprime la lista de noticias.
-const showAndHide = () => {
+const showNews = () => {
   newsPanel.style.display = 'none';
-  showNews.innerHTML = '';
+  newsList.innerHTML = '';
   // eslint-disable-next-line no-restricted-syntax
   for (const searchFilter of lista) {
-    showNews.innerHTML += `
+    newsList.innerHTML += `
       <section class="resultados">
         <article class="noticia">
           <h3><a href="${searchFilter.url}" target="_blank">${searchFilter.title}</a></h3>
@@ -41,7 +41,7 @@ const showAndHide = () => {
 const getInputSearch = () => {
   const value = input.value;
   lista = filterByTitle(value);
-  showAndHide();
+  showNews();
 };
 
 // Obtiene la lista de noticias al seleccionar la categoría "Todas las categorías".
@@ -49,7 +49,7 @@ const getCatAllNews = () => {
   // let allNewsOption = catAllNews.id;
   lista = getAllNews();
   // console.log(lista);
-  showAndHide();
+  showNews();
 };
 
 // Función que genera el array según la categoría electa en Submenú de Categorías.
@@ -58,7 +58,7 @@ for (let i = 0; i < category.length; i += 1) {
   category[i].addEventListener('click', () => {
     const categoryId = category[i].id;
     lista = filterNewsByFeedname(categoryId);
-    showAndHide();
+    showNews();
   });
 }
 
